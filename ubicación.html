@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realista Energia</title>
+  <link rel="icon" href="ICON_REALISTA_PNG-removebg-preview.png" type="image/png" />
+  <link rel="stylesheet" href="estilo3.css" />
+  <script defer src="script3.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav-top nav-bottom">
+    <div class="navbar">
+      <div class="logo">
+        <img src="LOGO_800X200_CONJUNTO_PNG-removebg-preview.png" alt="Logo Grupo Cochele" class="logo-img" />
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+        <li class="has-dropdown">
+          <a href="servicios.html" class="dropdown-toggle">Servicios <span class="arrow"></span></a>
+          <div class="dropdown-content">
+            <a href="smartmobility.html">Smart Mobility</a>
+            <a href="smartsolar.html">Smart Solar</a>
+          </div>
+        </li>
+        <li><a href="colaboradores.html">Colaboración</a></li>
+        <li><a href="atencionalcliente.html">Atención al Cliente</a></li>
+        <li class="has-dropdown">
+          <a href="ubicacion.html" class="dropdown-toggle">Contacto <span class="arrow"></span></a>
+          <div class="dropdown-content">
+            <a href="ubicación.html">Ubicación</a>
+            <a href="politicadeprivacidad.html">Política de Privacidad</a>
+            <a href="cochelecargador.html">Política de cookies</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="ubicacion-contacto">
+    <div class="ubicacion">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.8126568571097!2d-3.852394200000001!3d40.213230100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41f3ac5a7b60cb%3A0xc16c0221eda219b0!2sIberdrola%20Clientes!5e0!3m2!1ses!2ses!4v1745505927413!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Dirección:</strong> C. Carlos Ruiz, 2, 28971 Griñón, Madrid</p>
+        <p><strong>Teléfono:</strong> +34 600 123 456</p>
+        <p><strong>Correo Electrónico:</strong> contacto@realistaenergia.com</p>
+        <a href="contacto.html" class="descubremas-btn">Descubre más</a>
+    </div>
+  </section>
+<section class="formulario-contacto">
+    <div class="form-container">
+        <h2>¡Envíanos tu mensaje!</h2>
+        <form action="https://formspree.io/f/xpwdnwrg" method="POST">
+            <input type="hidden" name="_subject" value="Mensaje desde Realista Energía">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-field">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+            </div>
+            <div class="form-field">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required />
+            </div>
+            <div class="form-field">
+                <label for="contacto">Teléfono de Contacto</label>
+                <input type="tel" id="contacto" name="contacto" placeholder="Tu teléfono" required />
+            </div>
+            <div class="form-field">
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="observaciones" placeholder="Escribe tus observaciones" required></textarea>
+            </div>
+            <div class="form-field">
+                <label for="robot" class="checkbox-label">
+                    <input type="checkbox" id="robot" name="robot" required /> No soy un robot
+                </label>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <h4>Enlaces rápidos</h4>
+     <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="smartmobility.html">Servicios</a></li>
+          <li><a href="atencionalcliente.html">Atención al Cliente</a></li>
+          <li><a href="ubicación.html">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="footer-socials">
+      <h4>Síguenos</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-subscribe">
+      <h4>Contáctanos</h4>
+      <form action="#" method="post">
+        <input type="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Contáctanos</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-logo">
+    <img src="LOGO_800X200_CONJUNTO_PNG-removebg-preview.png" alt="Logo Empresa" />
+  </div>
+
+  <div class="footer-policies">
+    <ul>
+      <li><a href="politicadeprivacidad.html">Política de Privacidad</a></li>
+      <li><a href="terminos.html">Términos y Condiciones</a></li>
+      <li><a href="politicacookies.html">Política de Cookies</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Realista Energía. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>  
+</body>
+<a href="https://wa.me/+34919997169" target="_blank" class="whatsapp-icon">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</html>
